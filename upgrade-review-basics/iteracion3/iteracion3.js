@@ -50,5 +50,5 @@ for (const user of users) {
       sounds[key] = 1;
     }
   }
-}
+} 
 console.log(sounds);
