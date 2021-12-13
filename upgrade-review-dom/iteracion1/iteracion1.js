@@ -41,12 +41,6 @@ const countries2 = [
 for (let i = 0; i < countries2.length; i++) {
     let myDiv$$ = document.createElement('div');
     myDiv$$.innerHTML = `<h4>${countries2[i].title}</h4><img src="${countries2[i].imgUrl}">`;
-    let myButton$$ = document.createElement('button');
-    myButton$$.textContent = "Elimino el mío";
-    myButton$$.addEventListener('click', () => {
-        myDiv$$.remove();
-    });
-    myDiv$$.appendChild(myButton$$);
     document.body.appendChild(myDiv$$);
 }
 
@@ -66,3 +60,21 @@ myButton$$.addEventListener('click', deleteDiv);
 document.body.appendChild(myButton$$);
 // 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los
 // elementos de las listas que elimine ese mismo elemento del html.
+const countries3 = [
+    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=1" },
+    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=2" },
+    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=3" },
+    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=4" },
+    { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=5" },
+  ];
+  for (let i = 0; i < countries3.length; i++) {
+      let myDiv$$ = document.createElement('div');
+      myDiv$$.innerHTML = `<h4>${countries3[i].title}</h4><img src="${countries3[i].imgUrl}">`;
+      let myButton$$ = document.createElement('button');
+      myButton$$.textContent = "Elimino el mío";
+      myButton$$.addEventListener('click', () => {
+          myDiv$$.remove();
+      });
+      myDiv$$.appendChild(myButton$$);
+      document.body.appendChild(myDiv$$);
+  }
