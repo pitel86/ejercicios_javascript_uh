@@ -14,7 +14,15 @@ const exams = [
     {name: 'Keanu Reeves', score: 10}
 ];
 
+const total = exams.reduce((sum, exam) => sum + exam.score, 0);
+console.log(total);
+
 // 7.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los 
 // alumnos que esten aprobados usando la función .reduce().
 
+const total2 = exams.reduce((sum, exam) => exam.score >= 5 ? sum + exam.score : sum, 0);
+console.log(total2);
+
 // 7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
+const total3 = exams.reduce((sum, exam) => sum + exam.score, 0);
+console.log(total3/exams.length)
