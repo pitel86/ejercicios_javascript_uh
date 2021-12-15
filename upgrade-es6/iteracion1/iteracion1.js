@@ -5,3 +5,12 @@
 // 1.1 Ejecuta esta función sin pasar ningún parametro
 // 1.2 Ejecuta esta función pasando un solo parametro
 // 1.3 Ejecuta esta función pasando dos parametros
+
+const myFunc = (a = 10, b = 5) =>{
+    console.log(a + b);
+}
+
+
+myFunc();
+myFunc(3);
+myFunc(4,6);
