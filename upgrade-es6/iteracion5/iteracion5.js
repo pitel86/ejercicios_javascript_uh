@@ -114,9 +114,7 @@ const button2$$ = document.querySelector("button");
     ul2$$.innerHTML = ulContent;
   };
   
-  const selectedInput2$$ = document.body.querySelector(
-    '[data-function="toFilterStreamers"]'
-  );
+  const selectedInput2$$ = document.body.querySelector('input');
   
   button2$$.addEventListener("click", runSearch2);
   
