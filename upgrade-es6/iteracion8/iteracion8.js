@@ -17,3 +17,4 @@ const rpgVideogamesTotalScore = rpgVideogames.reduce((contador, rpgVideogame) =>
 const avgScoreRpgVideogames = rpgVideogamesTotalScore / rpgVideogames.length;
 
 console.log(avgScoreRpgVideogames);
+
