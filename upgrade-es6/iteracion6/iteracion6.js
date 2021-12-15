@@ -1,6 +1,7 @@
 // 6.1 Dado el siguiente array, usa .find() para econtrar el número 100.
 const numbers = [32, 21, 63, 95, 100, 67, 43];
-
+const myNumber = numbers.find(number => number === 100);
+console.log(myNumber);
 
 // 6.2 Dado el siguiente array, usa .find() para econtrar la pelicula del año 2010.
 const movies = [
@@ -8,6 +9,9 @@ const movies = [
 	{title: 'Origen', stars: 5, date: 2010},
 	{title: 'Your Name', stars: 5, date: 2016}
 ];
+
+const movie = movies.find(movie => movie.date === 2010);
+console.log(movie);
 
 // 6.3 Dado el siguiente javascript, usa .find() para econtrar el alien de nombre 
 // 'Cucushumushu' y la mutación 'Porompompero'. Una vez que los encuentres, usa 
@@ -23,3 +27,9 @@ const mutations = [
 	{name: 'Fly me to the moon', description: 'Permite volar, solo y exclusivamente a la luna'},
 	{name: 'Andando que es gerundio', description: 'Invoca a un señor mayor como Personal Trainer'}
 ];
+
+const alien = aliens.find(alien => alien.name === "Cucushumushu");
+const mutation = mutations.find(mutation => mutation.name === "Porompompero");
+
+const newAlien = {...alien, mutation:{ ...mutation}};
+console.log(newAlien)
