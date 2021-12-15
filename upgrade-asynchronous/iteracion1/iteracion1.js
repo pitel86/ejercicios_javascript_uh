@@ -5,7 +5,7 @@
 // 2.1 Dado el siguiente javascript y html. Añade la funcionalidad necesaria usando 
 // fetch() para hacer una consulta a la api cuando se haga click en el botón, 
 // pasando como parametro de la api, el valor del input.
-const baseUrl = 'https://api.nationalize.io';
+const baseUrl = 'https://api.nationalize.io'; 
 
 
 // 2.3 En base al ejercicio anterior. Crea dinamicamente un elemento  por cada petición 
